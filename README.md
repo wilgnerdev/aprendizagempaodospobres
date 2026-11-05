@@ -61,10 +61,16 @@ npm run dev
 
 Depois, acesse o endereço exibido no terminal (geralmente `http://localhost:5173`).
 
+Para gerar a versão de produção (pasta `dist/`):
+
+```bash
+npm run build
+```
+
 ## Estrutura de pastas
 
 ```
-├── public/                 # arquivos estáticos
+├── public/                     # arquivos estáticos
 ├── src/
 │   ├── site/               # conteúdo e recursos do site público
 │   │   ├── components/     # componentes do site
@@ -80,6 +86,12 @@ Depois, acesse o endereço exibido no terminal (geralmente `http://localhost:517
 ├── vite.config.js          # configuração do Vite
 └── package.json            # dependências e scripts
 ```
+
+### Organização do código
+
+- **`components/`** guarda o que é compartilhado entre várias páginas (Header, Footer).
+- **`pages/`** guarda cada página do site. Componentes que só fazem sentido dentro de uma página ficam na pasta `components/` dessa própria página (ex.: `Home/components/CardGrid`).
+- **`data/`** guarda os dados em arquivos JavaScript enquanto a API não está integrada. Futuramente, esses dados virão do back-end.
 
 ## Back-end
 
