@@ -1,14 +1,14 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom"
 import { useEffect, useLayoutEffect } from "react"
 
-import Header from "./components/Header/Header"
-import Home from "./pages/Home/Home.jsx"
-import CursoDetalhes from "./pages/CursoDetalhes/CursoDetalhes.jsx"
-import Footer from "./components/Footer/Footer"
-import FaqPage from "./pages/FaqPage/FaqPage.jsx"
-import FormPage from './pages/Form/Form.jsx'
-import { getCursoPorId } from "./data/cursos"
-import BackToTop from "./components/BackToTop/BackToTop.jsx"
+import Header from "./site/components/Header/Header"
+import Home from "./site/pages/Home/Home.jsx"
+import CursoDetalhes from "./site/pages/CursoDetalhes/CursoDetalhes.jsx"
+import Footer from "./site/components/Footer/Footer"
+import FaqPage from "./site/pages/FaqPage/FaqPage.jsx"
+import FormPage from './site/pages/Form/Form.jsx'
+import { getCursoPorId } from "./site/data/cursos"
+import BackToTop from "./site/components/BackToTop/BackToTop.jsx"
 
 const tituloPadrao = "Aprendizagem Profissional | Pão dos Pobres"
 

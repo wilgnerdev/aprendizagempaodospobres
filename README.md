@@ -66,12 +66,14 @@ Depois, acesse o endereço exibido no terminal (geralmente `http://localhost:517
 ```
 ├── public/                 # arquivos estáticos
 ├── src/
-│   ├── components/
-│   │   └── Header/         # componente de cabeçalho (Header.jsx + Header.css)
-│   ├── styles/
-│   │   ├── global.css      # estilos globais
-│   │   └── tokens.css      # variáveis de design (cores, espaçamentos, fontes)
-│   ├── App.jsx             # componente raiz
+│   ├── site/               # conteúdo e recursos do site público
+│   │   ├── components/     # componentes do site
+│   │   ├── data/           # dados de cursos e perguntas frequentes
+│   │   ├── pages/          # páginas públicas
+│   │   ├── services/       # integrações do site
+│   │   ├── styles/         # estilos globais e tokens
+│   │   └── utils/          # validações e utilitários
+│   ├── App.jsx             # rotas e componente raiz
 │   └── main.jsx            # ponto de entrada da aplicação
 ├── index.html              # página principal
 ├── eslint.config.js        # configuração do ESLint
