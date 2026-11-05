@@ -72,25 +72,19 @@ npm run build
 ```
 ├── public/                     # arquivos estáticos
 ├── src/
-│   ├── components/             # componentes reutilizáveis em todo o site
-│   │   ├── Footer/             # rodapé
-│   │   └── Header/             # cabeçalho
-│   ├── data/
-│   │   └── cursos.js           # dados dos cursos (lista usada nas páginas)
-│   ├── pages/                  # uma pasta por página do site
-│   │   ├── CursoDetalhes/      # página com as informações de um curso (CursoDetalhes.jsx + CursoDetalhes.css)
-│   └── Home/                   # pasta da página inicial
-│   │   ├── components/         # componentes usados apenas na Home
-│   │   │   ├── CardGrid/       # grade de cards dos cursos (CardGrid.jsx + CardGrid.css)
-│   │   │   └── HomeBanner/     # banner da página inicial
-│   │   └── Home.jsx
-│   ├── styles/                 # estilos globais e variáveis de design
-│   ├── App.jsx                 # componente raiz
-│   └── main.jsx                # ponto de entrada da aplicação
-├── index.html                  # página principal
-├── eslint.config.js            # configuração do ESLint
-├── vite.config.js              # configuração do Vite
-└── package.json                # dependências e scripts
+│   ├── site/               # conteúdo e recursos do site público
+│   │   ├── components/     # componentes do site
+│   │   ├── data/           # dados de cursos e perguntas frequentes
+│   │   ├── pages/          # páginas públicas
+│   │   ├── services/       # integrações do site
+│   │   ├── styles/         # estilos globais e tokens
+│   │   └── utils/          # validações e utilitários
+│   ├── App.jsx             # rotas e componente raiz
+│   └── main.jsx            # ponto de entrada da aplicação
+├── index.html              # página principal
+├── eslint.config.js        # configuração do ESLint
+├── vite.config.js          # configuração do Vite
+└── package.json            # dependências e scripts
 ```
 
 ### Organização do código
